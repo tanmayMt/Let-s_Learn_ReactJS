@@ -11,6 +11,40 @@
     border: 2px solid #75e1ff;
     margin: 15px auto;
 }
+/* Hover Effect */
+/* .card-style:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 4px 4px #70ee46;
+    background: linear-gradient(135deg, hsl(239, 56%, 47%), #ff7eb3);
+} */
+
+.card-style:hover {
+    transform: scale(1.1);
+    /* Slightly more zoomed effect */
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+    /* More prominent shadow */
+    background: linear-gradient(135deg, #ff6347, #ff7eb3, #70ee46, #ffcc00);
+    /* Multi-color gradient */
+    background-size: 400% 400%;
+    /* Makes the gradient more dynamic */
+    animation: gradient-animation 3s ease infinite;
+    /* Animation for gradient shift */
+}
+
+/* Adding gradient animation */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 /* Styling for Title */
 .card-title {
@@ -53,9 +87,3 @@
     margin-top: 10px;
 }
 
-/* Hover Effect */
-.card-style:hover {
-    transform: scale(1.05);
-     box-shadow: 2px 4px 4px #70ee46;
-    background: linear-gradient(135deg, hsl(239, 56%, 47%), #ff7eb3);
-}
