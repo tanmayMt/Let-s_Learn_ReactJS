@@ -8,20 +8,20 @@ export default function DataMapping() {
     // console.log(Data)
 
     ////component listing using for loop
-    let items = []
+    // let items = []
     // for(var x=0; x<Data.length; x++){
     //     items.push(<Card key={x} cardTitle={Data[x].title} cardDesc={Data[x].desc}/>)
     // }
-    items=Data.map((item)=>
-      <Card cardTitle={item.title} cardDesc={item.desc}/>
-    )
+    // items=Data.map((item)=>
+    //   <Card cardTitle={item.title} cardDesc={item.desc}/>
+    // )
     return (
     <div>        
       {/* Header section with inline styles */}
       <h1 style={{ backgroundColor: 'purple', textAlign: 'center', padding: '10px', color: 'white', }}>
         Todo App
       </h1>
-      {items}
+      {Data.map((item)=><Card cardTitle={item.title} cardDesc={item.desc}/>)}
     </div>
   );
 }
