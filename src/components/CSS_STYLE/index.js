@@ -25,7 +25,7 @@ export default function CSS_STYLE() {
              
              {/* Inline & external CSS style using className Example  */}
             <div style={cardStyle} className="card-style">
-                <h3>{todoTitle}</h3>
+                <h2><b>{todoTitle}</b></h2>
                 <p>{todoDesc}</p>
                 <p>{date}</p>
             </div>            
