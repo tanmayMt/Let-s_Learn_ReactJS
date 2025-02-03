@@ -21,7 +21,7 @@ export default function DataMapping() {
       <h1 style={{ backgroundColor: 'purple', textAlign: 'center', padding: '10px', color: 'white', }}>
         Todo App
       </h1>
-      {Data.map((item)=><Card cardTitle={item.title} cardDesc={item.desc}/>)}
+      {Data.map((item,index)=><Card key={index} cardTitle={item.title} cardDesc={item.desc}/>)}
     </div>
   );
 }
