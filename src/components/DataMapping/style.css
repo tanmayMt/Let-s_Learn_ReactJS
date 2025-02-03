@@ -1,0 +1,89 @@
+.card-style {
+    border-radius: 10px;
+    transition: 0.4s;
+    background: linear-gradient(135deg, hwb(39 27% 11%), #fad0c4);
+    width: 350px;
+    padding: 15px;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+    color: hsl(67, 62%, 42%);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border: 2px solid #75e1ff;
+    margin: 15px auto;
+}
+/* Hover Effect */
+/* .card-style:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 4px 4px #70ee46;
+    background: linear-gradient(135deg, hsl(239, 56%, 47%), #ff7eb3);
+} */
+
+.card-style:hover {
+    transform: scale(1.1);
+    /* Slightly more zoomed effect */
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+    /* More prominent shadow */
+    background: linear-gradient(135deg, #ff6347, #ff7eb3, #70ee46, #ffcc00);
+    /* Multi-color gradient */
+    background-size: 400% 400%;
+    /* Makes the gradient more dynamic */
+    animation: gradient-animation 3s ease infinite;
+    /* Animation for gradient shift */
+}
+
+/* Adding gradient animation */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Styling for Title */
+.card-title {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+}
+
+/* Styling for Description */
+.card-desc {
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    /* Gradient background */
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+    font-weight: 500;
+    text-align: justify;
+    margin: 10px 0;
+    padding: 10px 15px;
+}
+
+/* Styling for Date */
+.card-date {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    /* Gradient background */
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
