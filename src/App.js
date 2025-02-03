@@ -36,7 +36,7 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import Card from './components/Card/index.js'; // Importing the Card component
+import PropsDestructuringFunctional from './components/PropsDestructuringFunctional/PropsDestructuringFunctional/PropsDestructuringFunctional';
 
 function App() {
   return (
@@ -47,8 +47,9 @@ function App() {
       </h1>
 
       {/* Rendering the Card component twice */}
-      <Card />
-      <Card />
+      <PropsDestructuringFunctional cardTitle="Call Father" cardDesc="You neither an anchor to hold us back nor a sail to take us forward, but a guiding light whose love shows the way."/>
+      <PropsDestructuringFunctional cardTitle="Call Mother" cardDesc="You are the heart of a home, the first teacher, and the purest form of love."/>
+      <PropsDestructuringFunctional cardTitle="Call Wife" cardDesc="You are not just a partner but a best friend, a supporter, and a reason to smile every day"/>
     </div>
   );
 }
