@@ -7,11 +7,14 @@ export default function DataMapping() {
     //checking the data is imported correctly
     // console.log(Data)
 
-    //component listing using for loop
+    ////component listing using for loop
     let items = []
-    for(var x=0; x<Data.length; x++){
-        items.push(<Card key={x} cardTitle={Data[x].title} cardDesc={Data[x].desc}/>)
-    }
+    // for(var x=0; x<Data.length; x++){
+    //     items.push(<Card key={x} cardTitle={Data[x].title} cardDesc={Data[x].desc}/>)
+    // }
+    items=Data.map((item)=>
+      <Card cardTitle={item.title} cardDesc={item.desc}/>
+    )
     return (
     <div>        
       {/* Header section with inline styles */}
