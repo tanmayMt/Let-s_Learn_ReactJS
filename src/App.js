@@ -1,9 +1,9 @@
 import './App.css';
-import JSX_JS_expression from './components/JSX_JS_EXPRESSION/index.js'
+import CSS_STYLE from './components/CSS_STYLE/index.js'
 function App() {
   return (
     <div>
-      <JSX_JS_expression/>
+      <CSS_STYLE/>
     </div>
   );
 }

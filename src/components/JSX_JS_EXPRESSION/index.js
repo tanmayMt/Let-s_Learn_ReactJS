@@ -6,6 +6,7 @@ export default function JSX_JS_expression() {
     const fullDate = new Date();
     const date = fullDate.getDate() + "/" + fullDate.getMonth() + "/"+ fullDate.getFullYear();
     return (
+        // JSX (JavaScript XML) is a syntax extension for JavaScript used in React that allows you to write HTML-like code inside JavaScript.
         <div>
             <h1 style={{color:"red"}}>
                 Todo App
