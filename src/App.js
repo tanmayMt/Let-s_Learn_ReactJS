@@ -36,12 +36,12 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import DataMapping from './components//DataMapping/DataMapping';
-
+// import DataMapping from './components//DataMapping/DataMapping';
+import MappingWithUniqueId from './components/Mapping_With_Unique_Id/MappingWithUniqueId';
 function App() {
   return (
     <>
-      <DataMapping/>
+      <MappingWithUniqueId/>
     </>
   );
 }
