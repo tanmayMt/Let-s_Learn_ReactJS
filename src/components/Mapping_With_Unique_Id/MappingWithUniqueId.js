@@ -1,15 +1,16 @@
 import React from 'react';
-import Data from './data.json';
+import Data from './data';
 
 const MappingWithUniqueId=()=>{
   return (
     <div>
-        {Data.map((data,index)=>{
-            const {title,desc} = data;
+        {Data.map((data)=>{
+            const {id,title,desc} = data;
             return(
-                <div key={index}>
-                    <h2>{title}</h2>
-                    <p>{desc}</p>
+                <div key={id}>
+                    <h2>Title: {title}</h2>
+                    ID: {id}
+                    <p><b>Description: </b>{desc}</p>
                 </div>
             )
          })
