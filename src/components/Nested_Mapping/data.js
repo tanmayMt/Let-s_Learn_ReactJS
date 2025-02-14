@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from "uuid";
         id: uuidv4(),
         Name : "Debjit Roy",
         Age: 26,
+        // Instead of an array
         Phone:{home:"+91 7247003214",office:"+91 6247003941"}
     },    
     {
@@ -28,6 +29,7 @@ import { v4 as uuidv4 } from "uuid";
         id: uuidv4(),
         Name : "Kuntal Mandol",
         Age: 26,
+        // Instead of an array
         Phone:{home:"+91 9047003217",office:"+91 8247003210"}
     }
 ];

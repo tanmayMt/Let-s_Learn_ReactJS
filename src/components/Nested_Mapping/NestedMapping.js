@@ -11,6 +11,7 @@ export const NestedMapping = () => {
             <h4>ID: {id}</h4>
             <h3>Name: {Name}</h3>
             <h3>Age: {Age}</h3>
+            {/* If your Phone array is meant to hold multiple numbers, then you should restructure your data.js to avoid duplicate fields */}
             {Phone.home && <p>Home: {Phone.home}</p>}
             {Phone.office && <p>Office: {Phone.office}</p>}
             {/* {Phone.map((phone,index)=>{
