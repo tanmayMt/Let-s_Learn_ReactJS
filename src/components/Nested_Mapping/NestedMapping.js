@@ -11,6 +11,8 @@ export const NestedMapping = () => {
             <h4>ID: {id}</h4>
             <h3>Name: {Name}</h3>
             <h3>Age: {Age}</h3>
+            {Phone.home && <p>Home: {Phone.home}</p>}
+            {Phone.office && <p>Office: {Phone.office}</p>}
             {/* {Phone.map((phone,index)=>{
                const {home,office}=phone;
                return(
@@ -25,12 +27,13 @@ export const NestedMapping = () => {
                 Solution:
                 Instead of having multiple objects in the Phone array, you should structure it correctly, or adjust your rendering logic. */}
 
-            {Phone.length > 0 && (
+            {/* {Phone.length > 0 && (
                 <>
-                {Phone[0].home && <p>Home: {Phone[0].home}</p>}
-                {Phone[1].office && <p>Office: {Phone[1].office}</p>}
+                {Phone.home && <p>Home: {Phone.home}</p>}
+                {Phone.office && <p>Office: {Phone.office}</p>}
                 </>
-            )}
+            )} */}
+
             ------------------------------------------------------<br/>
           </div>
         )
