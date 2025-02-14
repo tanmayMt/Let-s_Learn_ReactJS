@@ -1,19 +1,23 @@
 import React from 'react';
-import Data from './data'
+import Data from './data';
+import './style.css'; // Importing CSS file for styling
 
 export const NestedMapping = () => {
   return (
-    <div>
+    <div className="container">
       {Data.map((data)=>{
         const {id,Name,Age,Phone} = data;
         return(
-          <div key={id}>
-            <h4>ID: {id}</h4>
-            <h3>Name: {Name}</h3>
-            <h3>Age: {Age}</h3>
+          <div key={id} className="card">
+            <div className="icon">{Name.charAt(0)}</div>
+            <div className="card-content">
+              <h4>ID: {id}</h4>
+              <h3>Name: {Name}</h3>
+              <h3>Age: {Age}</h3>
             {/* If your Phone array is meant to hold multiple numbers, then you should restructure your data.js to avoid duplicate fields */}
-            {Phone.home && <p>Home: {Phone.home}</p>}
-            {Phone.office && <p>Office: {Phone.office}</p>}
+              {Phone.home && <p>Home: {Phone.home}</p>}
+              {Phone.office && <p>Office: {Phone.office}</p>}
+            </div>
             {/* {Phone.map((phone,index)=>{
                const {home,office}=phone;
                return(
@@ -34,8 +38,6 @@ export const NestedMapping = () => {
                 {Phone.office && <p>Office: {Phone.office}</p>}
                 </>
             )} */}
-
-            ------------------------------------------------------<br/>
           </div>
         )
       })}
