@@ -36,14 +36,11 @@
 
 
 import './App.css'; // Importing CSS file for styling
-// import DataMapping from './components//DataMapping/DataMapping';
-// import MappingWithUniqueId from './components/Mapping_With_Unique_Id/MappingWithUniqueId';
-import { NestedMapping } from './components/Nested_Mapping/NestedMapping';
+import { Hood } from './components/Create_Element_Under_Hood/Hood';
 function App() {
   return (
     <>
-      {/* <MappingWithUniqueId/> */}
-      <NestedMapping/>
+    <Hood/>
     </>
   );
 }
