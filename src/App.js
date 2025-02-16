@@ -36,11 +36,11 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import { Hood } from './components/Create_Element_Under_Hood/Hood';
+import { Icons } from './components/React_Icons/Icons';
 function App() {
   return (
     <>
-    <Hood/>
+    <Icons/>
     </>
   );
 }
