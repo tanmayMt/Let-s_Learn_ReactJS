@@ -1,5 +1,7 @@
 //In React, components are reusable, independent building blocks that define the UI of an application.
 
+import State from "./components/STATE_IN_CLASS/State";
+
 // Components can be functional (stateless) or class-based (stateful), and they help in maintaining a modular and scalable code structure by managing 
 // UI logic efficiently.
 
@@ -36,11 +38,11 @@
 
 
 //import './App.css'; // Importing CSS file for styling
-import { Icons } from './components/React_Icons/Icons';
+
 function App() {
   return (
     <>
-    <Icons/>
+    <State count="0"/>
     </>
   );
 }
