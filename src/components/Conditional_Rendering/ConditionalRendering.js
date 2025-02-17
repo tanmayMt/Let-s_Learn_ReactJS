@@ -7,18 +7,26 @@ constructor(props) {
   super(props)
 
   this.state = {
-    IsLoggedIn : false,
+    IsLoggedIn : true,
   }
 }
 
   render() {
     const {IsLoggedIn} = this.state;
-    // conditional rending based on if-else
+    let element;
+    //// conditional rending based on if-else
+    // if(IsLoggedIn){
+    //     return <HomePage/>
+    // }
+    // else{
+    //     return <SignUpPage/>
+    // }
     if(IsLoggedIn){
-        return <HomePage/>
+        element=<HomePage/>
     }
     else{
-        return <SignUpPage/>
+        element=<SignUpPage/>
     }
+    return element;
   }
 }
