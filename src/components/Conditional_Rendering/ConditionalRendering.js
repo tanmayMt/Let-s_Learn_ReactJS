@@ -13,6 +13,7 @@ constructor(props) {
 
   render() {
     const {IsLoggedIn} = this.state;
+    // conditional rending based on if-else
     if(IsLoggedIn){
         return <HomePage/>
     }
