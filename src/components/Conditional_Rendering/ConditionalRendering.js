@@ -36,10 +36,18 @@ constructor(props) {
     // );
 
     ////short circuit method 
+    // return(
+    //     <>
+    //     {IsLoggedIn && <HomePage/>}
+    //     {!IsLoggedIn && <SignUpPage/>}
+    //     </>
+    // )
+
+    //ternary operator
+    element = IsLoggedIn ? <HomePage/> : <SignUpPage/>
     return(
         <>
-        {IsLoggedIn && <HomePage/>}
-        {!IsLoggedIn && <SignUpPage/>}
+        {element}
         </>
     )
   }
