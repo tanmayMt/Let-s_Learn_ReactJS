@@ -7,7 +7,7 @@ constructor(props) {
   super(props)
 
   this.state = {
-    IsLoggedIn : true,
+    IsLoggedIn : false,
   }
 }
 
@@ -27,6 +27,10 @@ constructor(props) {
     else{
         element=<SignUpPage/>
     }
-    return element;
+    return (
+        <>
+        {element}
+        </>
+    );
   }
 }
