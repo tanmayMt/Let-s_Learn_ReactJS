@@ -36,13 +36,13 @@
 // export default Greeting;
 
 
-//import './App.css'; // Importing CSS file for styling
-import ConditionalRendering from "./components/Conditional_Rendering/ConditionalRendering";
+import './App.css'; // Importing CSS file for styling
+import EventHandlingClass from './components/EventHandlingClass/EventHandlingClass';
 
 function App() {
   return (
     <>
-    <ConditionalRendering/>
+    <EventHandlingClass/>
     </>
   );
 }
