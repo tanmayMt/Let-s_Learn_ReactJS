@@ -7,7 +7,7 @@ constructor(props) {
   super(props)
 
   this.state = {
-    IsLoggedIn : false,
+    IsLoggedIn : true,
   }
 }
 
@@ -21,16 +21,26 @@ constructor(props) {
     // else{
     //     return <SignUpPage/>
     // }
-    if(IsLoggedIn){
-        element=<HomePage/>
-    }
-    else{
-        element=<SignUpPage/>
-    }
-    return (
+
+    ////element variable rendering
+    // if(IsLoggedIn){
+    //     element=<HomePage/>
+    // }
+    // else{
+    //     element=<SignUpPage/>
+    // }
+    // return (
+    //     <>
+    //     {element}
+    //     </>
+    // );
+
+    ////short circuit method 
+    return(
         <>
-        {element}
+        {IsLoggedIn && <HomePage/>}
+        {!IsLoggedIn && <SignUpPage/>}
         </>
-    );
+    )
   }
 }
