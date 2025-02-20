@@ -37,12 +37,12 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import EventHandlingClass from './components/EventHandlingClass/EventHandlingClass';
+import BINDING_EVENT_HANDLER from './components/BINDING_EVENT_HANDLER';
 
 function App() {
   return (
     <>
-    <EventHandlingClass/>
+    <BINDING_EVENT_HANDLER/>
     </>
   );
 }
