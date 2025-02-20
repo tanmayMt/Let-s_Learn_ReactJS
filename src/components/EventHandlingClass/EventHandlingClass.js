@@ -13,14 +13,17 @@ export default class EventHandlingClass extends Component {
   }
   
   handleOnChange = (e) =>{
-    console.log(e.target.value)
+    this.setState({
+        searchValue : e.target.value
+    })
+    console.log(this.state.searchValue)
   }
   render() {
     return (
             <div>
-                <input type="text" value={this.searchValue} onChange={this.handleOnChange}/><br/>
+                <input type="text" value={this.state.searchValue} onChange={this.handleOnChange}/><br/>
                 <button onClick={this.handleSignUpClick}>Sign Up</button>
-                <p></p>
+                <p>{this.state.searchValue}</p>
             </div>
     )
   }
