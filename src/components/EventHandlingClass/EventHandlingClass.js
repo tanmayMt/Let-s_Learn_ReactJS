@@ -15,8 +15,9 @@ export default class EventHandlingClass extends Component {
   handleOnChange = (e) =>{
     this.setState({
         searchValue : e.target.value
+    },()=>{
+      console.log(this.state.searchValue);
     })
-    console.log(this.state.searchValue)
   }
   render() {
     return (
