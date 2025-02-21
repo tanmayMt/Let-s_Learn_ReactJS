@@ -37,7 +37,7 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import UseStateInFunctionalComponent from './components/Hooks/useState_in_Functional_Component/UseStateInFunctionalComponent';
+import UseStateInFunctionalComponent from './components/Hooks/update_state_useState_in_Functional_Component/UseStateInFunctionalComponent';
 
 function App() {
   return (
