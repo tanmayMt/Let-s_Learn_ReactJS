@@ -37,12 +37,12 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import EventBubblingstopPropagation from './components/Hooks/EventBubbling_stopPropagation/EventBubblingstopPropagation';
+import Form1 from './components/FORM/Form1';
 
 function App() {
   return (
     <>
-    <EventBubblingstopPropagation/>
+    <Form1/>
     </>
   );
 }
