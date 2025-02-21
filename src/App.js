@@ -37,12 +37,12 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import State from './components/Hooks/ClassComponent_setState/State';
+import UseStateInFunctionalComponent from './components/Hooks/useState_in_Functional_Component/UseStateInFunctionalComponent';
 
 function App() {
   return (
     <>
-    <State/>
+    <UseStateInFunctionalComponent/>
     </>
   );
 }
