@@ -37,12 +37,12 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import UseStateInFunctionalComponent from './components/Hooks/update_state_useState_in_Functional_Component/UseStateInFunctionalComponent';
+import EventBubblingstopPropagation from './components/Hooks/EventBubbling_stopPropagation/EventBubblingstopPropagation';
 
 function App() {
   return (
     <>
-    <UseStateInFunctionalComponent/>
+    <EventBubblingstopPropagation/>
     </>
   );
 }
