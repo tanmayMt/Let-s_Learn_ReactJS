@@ -9,6 +9,7 @@ const EventBubblingstopPropagation = () => {
 
   const handleChildClick = (event) => {
     console.log("Child:",event);
+    event.stopPropagation(); // Prevent bubbling
   };
 
   return (
