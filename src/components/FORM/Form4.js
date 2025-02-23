@@ -1,4 +1,6 @@
 import React ,{useState}from 'react';
+import { ToastContainer, toast } from "react-toastify"; // Import Toastify
+import "react-toastify/dist/ReactToastify.css"; // Import CSS for Toastify
 import './style.css';
 const Form4 = () => {
 //   const [name, setName] = useState("");
@@ -23,6 +25,8 @@ const Form4 = () => {
   // Function to handle form submission
   const handleSubmit = (event)=>{
     console.log(user);
+    // Show success notification
+    toast.success("Registration Successful!", { position: "top-center" });
     event.preventDefault();// Prevents page reload
   }
   return (
@@ -59,6 +63,7 @@ const Form4 = () => {
                 <button type="submit">Register</button>
             </form>
         </>
+        <ToastContainer />
   )
 }
 
