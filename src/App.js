@@ -37,12 +37,12 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import Form2 from './components/FORM/Form2';
+import Form3 from './components/FORM/Form3';
 
 function App() {
   return (
     <>
-    <Form2/>
+    <Form3/>
     </>
   );
 }
