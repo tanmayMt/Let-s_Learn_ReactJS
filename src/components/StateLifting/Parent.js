@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Child from './Child';
 
 const Parent = () => {
-    const parentAge= 40;
+    const [n,setn]=useState('');
+    const childToParentMoney=(childToParentMoney2)=>{
+        console.log("In Parent(childToParentMoney): "+childToParentMoney2);
+        setn(childToParentMoney2);
+    }
+    const parentSalary= 40;
   return (
     <div>
       <p>This is Parent Component</p>
-      <Child parentAge={parentAge}/>
+      <Child parentSalary={parentSalary} childToParentMoney1={childToParentMoney}/>
+      <small>Mony Get From Child: {n}</small>
     </div>
   )
 }

@@ -1,13 +1,16 @@
 import React from 'react'
 
 const Child = (props) => {
-    const childAge=17;
-    const {parentAge}=props;
+    const childSalary=17;
+    const {parentSalary}=props;
+    const childToParentMoney=5;
   return (
     <div>
       <p>This is Child Component</p>
-      <small>Child Age: {childAge}</small><br/>
-      <small>Parent Age: {parentAge}</small>
+      <small>Child Salary: {childSalary}</small><br/>
+      <small>Parent Salary: {parentSalary}</small>
+      {/* Mony Get From Child:{props.childToParentMoney1(childToParentMoney)} */}
+      {props.childToParentMoney1(childToParentMoney)}
     </div>
   )
 }
