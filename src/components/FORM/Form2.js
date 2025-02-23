@@ -1,26 +1,32 @@
-import React,{useState} from 'react'
-import './style.css'
+import React ,{useState}from 'react';
+import './style.css';
+const Form2 = () => {
+//   const [name, setName] = useState("");
+//   const [email, setEmail] = useState("");
+//   const [password, setPassword] = useState("");
+  const [user,setUSer] = useState({
+    name:'',
+    email:'',
+    password:''
+  })
 
-export default function Form1() {
+  const {name,email,password} = user;
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-
-    const handleNameChange = (e) =>{
-        setName(e.target.value)
-    }
-
-    const handleEmailChange = (e) =>{
-        setEmail(e.target.value)
-    }
-
-    const handleSubmit = (e) =>{
-        console.log(name, email, password)
-        e.preventDefault();
-    }
-
-    return (
+  const handleNameChange = (event)=>{
+    setUSer({name:event.target.value,email,password});
+  }
+  const handleEmailChange = (event)=>{
+    setUSer({name,email:event.target.value,password});
+  }
+  const handlePasswordChange = (event)=>{
+    setUSer({name,email,password:event.target.value});
+  }
+  
+  const handleSubmit = (event)=>{
+    console.log(user);
+    event.preventDefault();
+  }
+  return (
         <>
             <h1>Register</h1>
             <form onSubmit={handleSubmit}>
@@ -45,7 +51,7 @@ export default function Form1() {
 
                     <label>Password : </label>
                     <input
-                        onChange={(e) => setPassword(e.target.value)}
+                        onChange={handlePasswordChange}
                         value={password}
                         type="password"
                         name="password"
@@ -54,5 +60,7 @@ export default function Form1() {
                 <button type="submit">Register</button>
             </form>
         </>
-    )
+  )
 }
+
+export default Form2;
