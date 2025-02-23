@@ -4,6 +4,8 @@ const Form2 = () => {
 //   const [name, setName] = useState("");
 //   const [email, setEmail] = useState("");
 //   const [password, setPassword] = useState("");
+ //In React, we can use the useState hook with an object to
+ //manage multiple related state values efficiently
   const [user,setUSer] = useState({
     name:'',
     email:'',
@@ -12,6 +14,7 @@ const Form2 = () => {
 
   const {name,email,password} = user;
 
+ // Function to update only the 'name' field while preserving other state values 
   const handleNameChange = (event)=>{
     setUSer({name:event.target.value,email,password});
   }
@@ -22,9 +25,10 @@ const Form2 = () => {
     setUSer({name,email,password:event.target.value});
   }
   
+  // Function to handle form submission
   const handleSubmit = (event)=>{
     console.log(user);
-    event.preventDefault();
+    event.preventDefault();// Prevents page reload
   }
   return (
         <>
