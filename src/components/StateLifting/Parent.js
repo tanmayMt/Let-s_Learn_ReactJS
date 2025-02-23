@@ -12,7 +12,7 @@ const Parent = () => {
     <div>
       <p>This is Parent Component</p>
       <Child parentSalary={parentSalary} childToParentMoney1={childToParentMoney}/>
-      <small>Mony Get From Child: {n}</small>
+      <small>In Parent Component, Money Get From Child:{n}</small>
     </div>
   )
 }
