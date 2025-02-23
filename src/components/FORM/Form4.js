@@ -62,8 +62,9 @@ const Form4 = () => {
                         required />
                 <button type="submit">Register</button>
             </form>
+            <ToastContainer />
         </>
-        <ToastContainer />
+        
   )
 }
 
