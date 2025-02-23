@@ -37,12 +37,12 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import Form4 from './components/FORM/Form4';
+import Parent from './components/StateLifting/Parent';
 
 function App() {
   return (
     <>
-    <Form4/>
+    <Parent/>
     </>
   );
 }
