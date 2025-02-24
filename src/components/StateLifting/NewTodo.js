@@ -1,5 +1,5 @@
 import React, {useState}from "react";
-import './style.css';
+import './newTodo.css';
 
 const NewTodo = (props) => {
   const [todo, setTodo] = useState("");

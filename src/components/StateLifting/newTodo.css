@@ -1,0 +1,59 @@
+/* Form Container */
+form {
+    background: hsl(240, 87%, 43%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+/* Label */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: hsl(50, 58%, 39%);
+}
+
+/* Input Field */
+input {
+    width: 90%;
+    padding: 12px;
+    border: 2px solid #4facfe;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border-color: #00c6ff;
+    box-shadow: 0 0 5px rgba(0, 198, 255, 0.5);
+}
+
+/* Add Todo Button */
+button {
+    background: linear-gradient(135deg, hsl(160, 100%, 73%), #ff7eb3);
+    color: hsl(0, 91%, 44%);
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, hsl(287, 100%, 63%), #ff4b89);
+    box-shadow: 0 4px 12px hsla(273, 62%, 63%, 0.5);
+    color: greenyellow;
+    transform: translateY(-2px);
+}

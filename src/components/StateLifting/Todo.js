@@ -1,7 +1,12 @@
 import React from "react";
+import './todo.css';
 
 const Todo = (props) => {
-  return <p>{props.todo}</p>;
+  return (
+    <div className="todo-card">
+      <p>{props.todo}</p>
+    </div>
+  );
 };
 
 export default Todo;

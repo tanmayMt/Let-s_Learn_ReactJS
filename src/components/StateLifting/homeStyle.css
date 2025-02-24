@@ -1,0 +1,89 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, hsl(67, 98%, 77%), #66a6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Container */
+.home-container {
+    background: #895a22;
+    padding: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+}
+
+/* Heading */
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Input Field */
+input {
+    width: 85%;
+    padding: 10px;
+    border: 2px solid #4facfe;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #00c6ff;
+    box-shadow: 0 0 5px rgba(0, 198, 255, 0.5);
+}
+
+/* Add Button */
+button {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff416c, #ff4b89);
+    box-shadow: 0 4px 12px rgba(255, 65, 108, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Todo List */
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+/* Todo Items */
+.todo-item {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.todo-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px rgba(24, 90, 157, 0.5);
+}
