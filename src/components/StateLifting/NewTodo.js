@@ -1,4 +1,5 @@
 import React from "react";
+import './style.css';
 
 const NewTodo = (props) => {
   props.onTodo({title:"This is new Todo"});
