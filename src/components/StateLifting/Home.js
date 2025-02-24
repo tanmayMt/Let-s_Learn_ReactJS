@@ -1,16 +1,19 @@
-import React from 'react'
+import React,{useState} from 'react'
 
-import Todo from './Todo'
 import NewTodo from './NewTodo';
+import Todos from './Todos';
+const dummyTodos = ["todo1", "todo2"];
 
 const Home = () => {
+  const [todos, setTodos] = useState(dummyTodos);
+
   const handleNewTodo = (newTodo) => {
-    console.log(newTodo);
+    setTodos([...todos,newTodo]);
   }
   return (
     <div>
       <NewTodo onTodo={handleNewTodo}/>
-      <Todo title="Learn React.js"/>
+      <Todos todos={todos}/>
     </div>
   )
 }

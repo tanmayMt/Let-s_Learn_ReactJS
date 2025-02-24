@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
 
-const Todos = () => {
+import Todo from "./Todo";
+
+const Todos = (props) => {
   return (
     <div>
-      
+      {props.todos.map((todo, index) => (
+        <Todo key={index} todo={todo} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
 export default Todos;
