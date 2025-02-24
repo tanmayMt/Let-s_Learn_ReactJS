@@ -37,12 +37,13 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import Parent from './components/StateLifting/Parent';
+import Home from './components/StateLifting/Home';
+
 
 function App() {
   return (
     <>
-    <Parent/>
+    <Home/>
     </>
   );
 }
