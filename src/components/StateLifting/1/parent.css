@@ -1,0 +1,32 @@
+/* Parent Container */
+.parent-container {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+/* Heading */
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Heading */
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Money Text */
+.money-text {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+}

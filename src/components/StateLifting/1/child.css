@@ -1,0 +1,43 @@
+/* Child Container */
+.child-container {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: 15px auto;
+    text-align: center;
+    color: #333;
+}
+
+/* Heading */
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* Heading */
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Salary Display */
+p {
+    font-size: 16px;
+    background: #31b6ce33;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+/* Specific Background for Parent Salary */
+.parent-salary {
+    background: linear-gradient(135deg, hwb(214 26% 4%), #478ed1);
+    /* Blue gradient */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 5px 0;
+}

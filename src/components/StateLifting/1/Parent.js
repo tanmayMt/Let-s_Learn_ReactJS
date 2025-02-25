@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Child from './Child';
+import './parent.css';
 
 const Parent = () => {
     const [n,setn]=useState('');
@@ -9,10 +10,10 @@ const Parent = () => {
     }
     const parentSalary= 40;
   return (
-    <div>
-      <p>This is Parent Component</p>
+    <div className="parent-container">
+      <h2>👨‍👦 This is Parent Component</h2>
       <Child parentSalary={parentSalary} childToParentMoney1={childToParentMoney}/>
-      <small>In Parent Component, Money Get From Child:{n}</small>
+       <p className="money-text">💰 Money Received from Child: <strong>{n}</strong></p>
     </div>
   )
 }

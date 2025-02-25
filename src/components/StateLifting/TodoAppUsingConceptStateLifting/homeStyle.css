@@ -12,7 +12,7 @@ body {
 /* Main Container */
 .home-container {
     background: #895a22;
-    padding: 400px;
+    padding: 500px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -22,7 +22,7 @@ body {
 
 /* Heading */
 h2 {
-    color: #333;
+    color: hsl(64, 76%, 42%);
     margin-bottom: 15px;
 }
 

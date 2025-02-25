@@ -25,6 +25,10 @@
 
 /* Hover Effect */
 .todo-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.07) rotate(1deg);
+    box-shadow: 0 8px 16px rgba(190, 177, 35, 0.4);
+    /* More vibrant shadow */
+    background: linear-gradient(135deg, hsl(103, 82%, 38%), #ff7eb3);
+    /* Gradient hover effect */
+    color: white;
 }

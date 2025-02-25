@@ -37,7 +37,7 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import Home from './components/StateLifting/Home';
+import Home from './components/StateLifting/TodoAppUsingConceptStateLifting/Home';
 
 
 function App() {
