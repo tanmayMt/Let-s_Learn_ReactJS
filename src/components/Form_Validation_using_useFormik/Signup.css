@@ -1,0 +1,71 @@
+/* Signup Form Container */
+.signup-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #1955a34d;
+    width: 350px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+}
+
+/* Heading */
+h2 {
+    color: hsl(191, 64%, 49%);
+    font-size: 26px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    color: hsl(305, 81%, 44%);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #bade4eb3;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    background: hsl(120, 68%, 44%);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(45deg, #ff6b6b, #ffb400);
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: linear-gradient(45deg, hsl(224, 100%, 64%), hsl(98, 100%, 55%));
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
