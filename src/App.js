@@ -37,12 +37,12 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import UseEffectExample from './components/Hooks/useEffect/useEffectExample';
+import DataFetch2 from './components/Hooks/useEffect/DataFetch2';
 
 function App() {
   return (
     <>
-    <UseEffectExample/>
+    <DataFetch2/>
     </>
   );
 }
