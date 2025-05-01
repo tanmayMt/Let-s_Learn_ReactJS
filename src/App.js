@@ -37,12 +37,12 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import DataFetch from './components/Hooks/CustomHooks/DataFetch';
+import PropDriling from './components/PropDriling/PropDriling';
 
 function App() {
   return (
     <>
-    <DataFetch/>
+    <PropDriling/>
     </>
   );
 }
