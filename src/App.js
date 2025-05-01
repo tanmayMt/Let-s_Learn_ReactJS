@@ -37,12 +37,12 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import DataFetch2 from './components/Hooks/useEffect/DataFetch2';
+import DataFetch from './components/Hooks/CustomHooks/DataFetch';
 
 function App() {
   return (
     <>
-    <DataFetch2/>
+    <DataFetch/>
     </>
   );
 }
