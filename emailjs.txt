@@ -1,0 +1,6 @@
+emailjs
+you can use EmailJS or an SMTP service like Nodemailer. Below is the solution using EmailJS, which is simpler and doesn’t require a backend.
+
+Gmail
+
+Service ID :  service_szr0yuy

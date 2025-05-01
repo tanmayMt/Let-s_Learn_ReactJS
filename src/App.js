@@ -37,12 +37,12 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import Signup from './components/Form_Validation_using_useFormik/Signup';
+import UseEffectExample from './components/Hooks/useEffect/useEffectExample';
 
 function App() {
   return (
     <>
-    <Signup/>
+    <UseEffectExample/>
     </>
   );
 }
