@@ -1,34 +1,49 @@
 import React,{useState}from 'react'
 import './Signup.css'
+import { useFormik } from 'formik';
+
 const Signup = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    password: "",
-  });
+  const formik = useFormik({
+    initialValues: {
+      name:'',
+      email:'',
+      password:''
+    },
+    onSubmit:(values, {resetForm})=>{
+      console.log(values);
+      resetForm({values:""})
+    }
+  })
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   password: "",
+  // });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("User Data:", formData);
-  };
+  // const handleChange = (e) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("User Data:", formData);
+    
+  // };
 
   const renderForm = (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={formik.handleSubmit}>
       <div className="input-group">
         <label htmlFor="name">Name: </label>
         <input
           type="text"
           id="name"
           name="name"
-          value={formData.name}
-          onChange={handleChange}
+          value={formik.values.name}
+          onChange={formik.handleChange}
           required
         />
         <br />
@@ -39,8 +54,8 @@ const Signup = () => {
           type="email"
           id="email"
           name="email"
-          value={formData.email}
-          onChange={handleChange}
+          value={formik.values.email}
+          onChange={formik.handleChange}
           required
         />
         <br />
@@ -52,8 +67,8 @@ const Signup = () => {
           type="password"
           id="password"
           name="password"
-          value={formData.password}
-          onChange={handleChange}
+          value={formik.values.password}
+          onChange={formik.handleChange}
           required
         />
         <br />
