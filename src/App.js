@@ -37,12 +37,12 @@
 
 
 import './App.css'; // Importing CSS file for styling
-import Signup from './components/Form_Validation_using_useFormik/Signup';
+import SignupValidation from './components/Form_Validation_using_useFormik/SignupValidation';
 
 function App() {
   return (
     <>
-    <Signup/>
+    <SignupValidation/>
     </>
   );
 }
