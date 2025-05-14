@@ -1,3 +1,19 @@
+import './App.css'; // Importing CSS file for styling
+import SignupValidation from './components/FORM/Form_Validation_yup_useFormik_forn_mangement/SignupValidation';
+
+function App() {
+  return (
+    <>
+    <SignupValidation/>
+    </>
+  );
+}
+
+export default App; // Exporting the App component
+
+
+
+
 //In React, components are reusable, independent building blocks that define the UI of an application.
 
 
@@ -36,15 +52,3 @@
 // export default Greeting;
 
 
-import './App.css'; // Importing CSS file for styling
-import SignupValidation from './components/Form_Validation_using_useFormik/SignupValidation';
-
-function App() {
-  return (
-    <>
-    <SignupValidation/>
-    </>
-  );
-}
-
-export default App; // Exporting the App component
