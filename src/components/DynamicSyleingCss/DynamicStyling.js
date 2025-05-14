@@ -31,6 +31,7 @@ const DynamicStyling = () => {
        value={name}
        onChange={handleNameChange}
        style={{backgroundColor:validInput?"green":"red"}}/>
+       {/*className=`{${validInput?"valid":"invalid"}}` */}
       <p>
         {name}
       </p>
