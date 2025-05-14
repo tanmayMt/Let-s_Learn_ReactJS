@@ -1,10 +1,10 @@
 import './App.css'; // Importing CSS file for styling
-import Toggle from './components/Toggle/Toggle';
+import FAQs from './components/Toggle/FAQ/FAQs';
 
 function App() {
   return (
     <>
-    <Toggle/>
+    <FAQs/>
     </>
   );
 }

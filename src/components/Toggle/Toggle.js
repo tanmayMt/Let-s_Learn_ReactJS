@@ -5,7 +5,6 @@ const Toggle = () => {
   const [toggle,setToggle] = useState(true);
   return (
     <div>
-        
         <h>Toogle</h>
         {toggle &&(
             <p>
