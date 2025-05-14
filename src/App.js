@@ -1,10 +1,10 @@
 import './App.css'; // Importing CSS file for styling
-import SignupValidation from './components/FORM/Form_Validation_yup_useFormik_forn_mangement/SignupValidation';
+import Toggle from './components/Toggle/Toggle';
 
 function App() {
   return (
     <>
-    <SignupValidation/>
+    <Toggle/>
     </>
   );
 }
