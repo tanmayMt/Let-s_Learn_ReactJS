@@ -1,10 +1,10 @@
 import './App.css'; // Importing CSS file for styling
-import FAQs from './components/Toggle/FAQ/FAQs';
+import DynamicStyling from './components/DynamicSyleingCss/DynamicStyling';
 
 function App() {
   return (
     <>
-    <FAQs/>
+    <DynamicStyling/>
     </>
   );
 }

@@ -20,7 +20,7 @@ function Welcome1(){
     return [
         React.createElement("h6", {}, "Welcome"),
         React.createElement("div", {}, 
-            React.createElement("i", {}, "Tanmay"))
+        React.createElement("i", {}, "Tanmay"))
     ];
 }
 
