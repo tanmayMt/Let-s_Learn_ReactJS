@@ -1,10 +1,9 @@
 import './App.css'; // Importing CSS file for styling
-import DynamicStyling from './components/DynamicSyleingCss/DynamicStyling';
-
+import LifeCycle from './components/LifeCycle/LifeCycle';
 function App() {
   return (
     <>
-    <DynamicStyling/>
+    <LifeCycle/>
     </>
   );
 }
