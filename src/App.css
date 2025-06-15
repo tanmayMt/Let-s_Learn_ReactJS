@@ -67,3 +67,24 @@
 .icon-react:hover {
   transform: scale(1.2);
 }
+
+
+nav {
+  height: 10vh;
+  background-color: violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional: Styling for links */
+nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

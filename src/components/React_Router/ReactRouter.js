@@ -6,6 +6,7 @@ import Error from "./pages/Error";
 
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navbar from './Navbar';
 const ReactRouter = () => {
   return (
 
@@ -14,6 +15,7 @@ const ReactRouter = () => {
 // Route – defines a path and its corresponding component
    
     <BrowserRouter>
+     <Navbar/>
      <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
