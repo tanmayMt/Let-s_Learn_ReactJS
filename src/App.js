@@ -1,9 +1,9 @@
 import './App.css'; // Importing CSS file for styling
-import LifeCycle from './components/LifeCycle/LifeCycle';
+import ReactRouter from './components/React_Router/ReactRouter';
 function App() {
   return (
     <>
-    <LifeCycle/>
+    <ReactRouter/>
     </>
   );
 }
