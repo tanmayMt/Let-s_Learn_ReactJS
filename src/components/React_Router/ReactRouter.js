@@ -7,6 +7,7 @@ import Error from "./pages/Error";
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
+import Blogs from './pages/Blogs';
 const ReactRouter = () => {
   return (
 
@@ -19,6 +20,7 @@ const ReactRouter = () => {
      <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/blogs' element={<Blogs/>}/>
         <Route path='*' element={<Error/>}/>
      </Routes>
     </BrowserRouter>
