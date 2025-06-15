@@ -8,6 +8,8 @@ import Error from "./pages/Error";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
 import Blogs from './pages/Blogs';
+import Blog from './pages/Blog';
+
 const ReactRouter = () => {
   return (
 
@@ -21,6 +23,7 @@ const ReactRouter = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/blogs' element={<Blogs/>}/>
+        <Route path='/blogs/:title' element={<Blog/>}/>
         <Route path='*' element={<Error/>}/>
      </Routes>
     </BrowserRouter>
