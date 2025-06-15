@@ -68,7 +68,6 @@
   transform: scale(1.2);
 }
 
-
 nav {
   height: 10vh;
   background-color: violet;
@@ -77,14 +76,21 @@ nav {
   align-items: center;
 }
 
-/* Optional: Styling for links */
-nav-link {
+/* ✅ Correct: use .nav-link instead of nav-link */
+.nav-link {
   text-decoration: none;
   color: white;
   font-weight: bold;
   font-size: 18px;
+  margin: 0 15px;
 }
 
-nav a:hover {
+/* ✅ Hover effect */
+.nav-link:hover {
   text-decoration: underline;
+}
+
+/* ✅ Highlight active link (optional) */
+.nav-link.active {
+  color: yellow;
 }
