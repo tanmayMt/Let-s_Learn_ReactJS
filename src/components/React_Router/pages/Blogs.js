@@ -32,7 +32,8 @@ const Blogs = () => {
           return <article key={id}>
             <h3>{title}</h3>
             <p>{truncateString(body,90)}</p>
-            <Link to={title}>Learn More</Link>
+            <Link to={`/blogs/${id}`}>Learn More</Link>
+            {/* <Link to={`/blogs/:id`}>Learn More</Link> */}
           </article>
         })}
       </section>

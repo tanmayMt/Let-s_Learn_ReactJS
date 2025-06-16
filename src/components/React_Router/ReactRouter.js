@@ -23,7 +23,8 @@ const ReactRouter = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/blogs' element={<Blogs/>}/>
-        <Route path='/blogs/:title' element={<Blog/>}/>
+        {/* <Route path='/blogs/:title' element={<Blog/>}/> */}
+        <Route path='/blogs/:id' element={<Blog/>}/>
         <Route path='*' element={<Error/>}/>
      </Routes>
     </BrowserRouter>
