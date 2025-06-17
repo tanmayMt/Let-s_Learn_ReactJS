@@ -32,8 +32,8 @@ const Blogs = () => {
           return <article key={id}>
             <h3>{title}</h3>
             <p>{truncateString(body,90)}</p>
-            <Link to={`/blogs/${id}`} state={{id,title,body}}>Learn More</Link>
-            {/* <Link to={`/blogs/:id`}>Learn More</Link> */}
+            <Link to={`/blogs/${id}`} state={{id,title,body}}>Learn More</Link> {/* This is for useLocation() */}
+            {/* <Link to={`/blogs/:id`}>Learn More</Link> */}   {/* This is for useParams() */}
           </article>
         })}
       </section>
