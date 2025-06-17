@@ -5,6 +5,13 @@ import BlogsData from './BlogsData';
 const Blog = () => {
   const {id} = useParams();
   const location = useLocation();
+//   useLocation is a React Router hook that lets you access the current URL/location object in your app.
+// It gives you full information about:
+// •	pathname (current route)
+// •	search (query parameters)
+// •	hash (anchor link)
+// •	state (optional passed data)
+
   console.log(location);
 
 //  useParams is a React Router hook that lets you access the dynamic parts of the URL (called route parameters).
