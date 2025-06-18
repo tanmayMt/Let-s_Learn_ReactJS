@@ -9,6 +9,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
 import Blogs from './pages/Blogs';
 import Blog from './pages/Blog';
+import Users from './pages/Users';
+import User from './pages/User';
 
 const ReactRouter = () => {
   return (
@@ -25,6 +27,8 @@ const ReactRouter = () => {
         <Route path='/blogs' element={<Blogs/>}/>
         {/* <Route path='/blogs/:title' element={<Blog/>}/> */}
         <Route path='/blogs/:id' element={<Blog/>}/>
+        <Route path='/users' element={<Users/>}/>
+        <Route path='/users/:id' element={<User/>}/>
         <Route path='*' element={<Error/>}/>
      </Routes>
     </BrowserRouter>
