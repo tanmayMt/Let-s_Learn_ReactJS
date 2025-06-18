@@ -1,10 +1,10 @@
 import './App.css'; // Importing CSS file for styling
-import FormValidationManually from './components/FORM/FormValidationManually/FormValidationManually';
-import ReactRouter from './components/React_Router/ReactRouter';
+import APIIntegrationUsingaxios from './components/API_Integration/APIIntegrationUsingaxios';
+
 function App() {
   return (
     <>
-    <FormValidationManually/>
+    <APIIntegrationUsingaxios/>
     </>
   );
 }
