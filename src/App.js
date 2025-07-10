@@ -1,11 +1,11 @@
 import './App.css'; // Importing CSS file for styling
+import UseMemo1 from './components/Hooks/useMemo/UseMemo1';
 
-import UseLayoutEffect1 from './components/Hooks/useLayoutEffect/UseLayoutEffect1';
 
 function App() {
   return (
     <>
-    <UseLayoutEffect1/>
+    < UseMemo1/>
     </>
   );
 }
