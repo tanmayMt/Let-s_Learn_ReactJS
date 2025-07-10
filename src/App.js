@@ -1,10 +1,11 @@
 import './App.css'; // Importing CSS file for styling
-import APIIntegrationUsingaxios from './components/API_Integration/APIIntegrationUsingaxios';
+import APIIntegrationWeather from './components/API_Integration/ThirdPartyAPIIntegration/APIIntegrationWeather';
+import UseEffectExample1 from './components/Hooks/useEffect/UseEffectExample1';
 
 function App() {
   return (
     <>
-    <APIIntegrationUsingaxios/>
+    <UseEffectExample1/>
     </>
   );
 }
