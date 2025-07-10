@@ -1,11 +1,11 @@
 import './App.css'; // Importing CSS file for styling
-import APIIntegrationWeather from './components/API_Integration/ThirdPartyAPIIntegration/APIIntegrationWeather';
-import UseEffectExample1 from './components/Hooks/useEffect/UseEffectExample1';
+
+import UseLayoutEffect1 from './components/Hooks/useLayoutEffect/UseLayoutEffect1';
 
 function App() {
   return (
     <>
-    <UseEffectExample1/>
+    <UseLayoutEffect1/>
     </>
   );
 }
